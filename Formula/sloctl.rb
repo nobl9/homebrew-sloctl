@@ -1,15 +1,15 @@
 class Sloctl < Formula
     desc "Command-line client for Nobl9"
     homepage "https://nobl9.com"
-    version "0.0.60"
+    version "0.0.61"
     bottle :unneeded
   
     if OS.mac?
-      url "https://github.com/nobl9/sloctl/releases/download/0.0.60/sloctl-macos-0.0.60.zip"
-      sha256 "c18e1513eac992c192ab132b4bb0f7b888a36f372e593947fede9d5659c31a36"
+      url "https://github.com/nobl9/sloctl/releases/download/0.0.61/sloctl-macos-0.0.61.zip"
+      sha256 "6c86949237ec8aeff8f554055279c53b224793a7ab18720743da1f03d8d78e51"
     elsif OS.linux?
-      url "https://github.com/nobl9/sloctl/releases/download/0.0.60/sloctl-linux-0.0.60.zip"
-      sha256 "998850e068eb93b34efb16f9379053a79c235e5dabd2599f568f5cd01c7bf761"
+      url "https://github.com/nobl9/sloctl/releases/download/0.0.61/sloctl-linux-0.0.61.zip"
+      sha256 "84e9d19b00b3d641be7a6583b9d33a957ab352f5ad6c5caef2e25373c2b8115d"
     end
   
     def install
