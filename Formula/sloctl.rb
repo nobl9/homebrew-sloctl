@@ -1,27 +1,28 @@
 class Sloctl < Formula
     desc "Command-line client for Nobl9"
     homepage "https://nobl9.com"
-    version "0.0.63"
-
+    version "0.0.65"
+    bottle :unneeded
+  
     if OS.mac?
-      url "https://github.com/nobl9/sloctl/releases/download/0.0.63/sloctl-macos-0.0.63.zip"
-      sha256 "768a26285d00100aa95b268b7e6e7e362342f8770e0ab09d73b31f00735298b2"
+      url "https://github.com/nobl9/sloctl/releases/download/0.0.65/sloctl-macos-0.0.65.zip"
+      sha256 "493521570715ba494033fbe156081bbd289b52da35eaa8a3c29436d24977c356"
     elsif OS.linux?
-      url "https://github.com/nobl9/sloctl/releases/download/0.0.63/sloctl-linux-0.0.63.zip"
-      sha256 "023a8c9ba1b057874c967ec94b7cf49e591f8916d504c37d6723d587b01b7613"
+      url "https://github.com/nobl9/sloctl/releases/download/0.0.65/sloctl-linux-0.0.65.zip"
+      sha256 "1f23ec9010019a9d0bfa0b52dc3b6656ce1b670222602ad607592e03add3555d"
     end
-
+  
     def install
       bin.install "sloctl"
     end
-
+  
     def caveats
         <<~EOS
           Thank you for installing the command-line client for Nobl9!
-
+    
           To see help and a list of available commands type:
-            $ sloctl help
-
+            $ sloctl help 
+   
           For more information on how to use the command-line client
           and the Nobl9 managed cloud service, visit:
             https://nobl9.com
