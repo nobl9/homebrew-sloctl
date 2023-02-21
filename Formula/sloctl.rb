@@ -5,14 +5,14 @@
 class Sloctl < Formula
   desc "Command-line client for Nobl9"
   homepage "https://nobl9.com"
-  version "0.0.81"
+  version "0.0.82"
 
   on_macos do
-    url "https://github.com/nobl9/sloctl/releases/download/v0.0.81/sloctl-macos-0.0.81"
-    sha256 "eec9ced6f2ed8f99c59d6a00de3b1ed4df3def3102c1b4f0d146f96ecdc411bb"
+    url "https://github.com/nobl9/sloctl/releases/download/v0.0.82/sloctl-macos-0.0.82"
+    sha256 "43dcdc5d3fc625a49608f31fda0a08990890d6919fcffb3f9d2c0c8ea0fd8cf0"
 
     def install
-      bin.install Dir['sloctl-*-0.0.81'].first()  => "sloctl"
+      bin.install Dir['sloctl-*-0.0.82'].first()  => "sloctl"
     end
 
     if Hardware::CPU.arm?
@@ -28,11 +28,11 @@ class Sloctl < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/nobl9/sloctl/releases/download/v0.0.81/sloctl-linux-0.0.81"
-      sha256 "271673b61d6a46765626a2a0c0090923f56a29a32c853982e5d13039fe86fe76"
+      url "https://github.com/nobl9/sloctl/releases/download/v0.0.82/sloctl-linux-0.0.82"
+      sha256 "e42df50d135fb3815319c3f0d9326abe8faf54587a67ce95f4142a5d3c04798d"
 
       def install
-        bin.install Dir['sloctl-*-0.0.81'].first()  => "sloctl"
+        bin.install Dir['sloctl-*-0.0.82'].first()  => "sloctl"
       end
     end
   end
