@@ -46,7 +46,7 @@ class Sloctl < Formula
 
       For more information on how to use the command-line client
       and the Nobl9 managed cloud service, visit:
-        http://docs.nobl9.com/sloctl-docs
+        https://docs.nobl9.com/sloctl-user-guide
     EOS
   end
 
