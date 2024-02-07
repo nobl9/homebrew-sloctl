@@ -9,7 +9,7 @@ class Sloctl < Formula
 
   on_macos do
     url "https://github.com/nobl9/sloctl/releases/download/v0.0.98/sloctl-macos-0.0.98"
-    sha256 "706202fa484e88efbe41ededbb7ecadccae9ccdb69ba788e244f5d375b8271a2"
+    sha256 "bc4a3ad55f97cbf930920cde4d7b24bcaa3f5efc123fc2fe802682d7a532316a"
 
     def install
       bin.install Dir['sloctl-*-0.0.98'].first()  => "sloctl"
@@ -29,7 +29,7 @@ class Sloctl < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/nobl9/sloctl/releases/download/v0.0.98/sloctl-linux-0.0.98"
-      sha256 "795f1b308cf313b29e79701aa8e86ee7d4adb767209fcd6ea65fe080daac53af"
+      sha256 "4fb974175933270a01f8d56fc06b5c0dcfe0af3c15ed7338dece3e4ff1b54b47"
 
       def install
         bin.install Dir['sloctl-*-0.0.98'].first()  => "sloctl"
