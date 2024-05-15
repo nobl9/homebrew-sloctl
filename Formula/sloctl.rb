@@ -5,17 +5,17 @@
 class Sloctl < Formula
   desc "Command-line client for Nobl9"
   homepage "https://docs.nobl9.com/sloctl-user-guide"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
-    url "https://github.com/nobl9/sloctl/releases/download/v0.1.0/sloctl-macos-0.1.0"
-    sha256 "06ce066d6cdefd19f3803a392bb601847a61ed76822396e20a80a8d80233d397"
+    url "https://github.com/nobl9/sloctl/releases/download/v0.2.0/sloctl-macos-0.2.0"
+    sha256 "5a246a1969929930da8ea901e4ea35a0f90779457cd6884d7fe05f029b468dcc"
 
     def install
-      bin.install Dir['sloctl-*-0.1.0'].first()  => "sloctl"
+      bin.install Dir['sloctl-*-0.2.0'].first()  => "sloctl"
     end
 
-    if Hardware::CPU.arm?
+    on_arm do
       def caveats
         <<~EOS
           The darwin_arm64 architecture is not supported for the Sloctl
@@ -27,12 +27,14 @@ class Sloctl < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/nobl9/sloctl/releases/download/v0.1.0/sloctl-linux-0.1.0"
-      sha256 "2bb4df70019d802f2dfb5ed3ee481167bad4136c4d63ab056cd267efd88f41b9"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/nobl9/sloctl/releases/download/v0.2.0/sloctl-linux-0.2.0"
+        sha256 "54470e3e436e10a177dd87d35e99f350764ec92c99719b606dea2ab8a9441d73"
 
-      def install
-        bin.install Dir['sloctl-*-0.1.0'].first()  => "sloctl"
+        def install
+          bin.install Dir['sloctl-*-0.2.0'].first()  => "sloctl"
+        end
       end
     end
   end
