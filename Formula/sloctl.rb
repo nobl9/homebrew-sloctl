@@ -13,7 +13,7 @@ class Sloctl < Formula
       sha256 "2de444f62121a0053326d4febc084f1f6951ad2ba77ba242598f5f955f47a028"
 
       def install
-        bin.install Dir['sloctl-*-0.11.0'].first()  => "sloctl"
+        bin.install Dir['sloctl-0.11.0-*'].first()  => "sloctl"
       end
     end
     if Hardware::CPU.arm?
@@ -21,7 +21,7 @@ class Sloctl < Formula
       sha256 "65dfa70e900e7595764821e56cff13aaaa4904d72e59ccc75823c3504f586f0e"
 
       def install
-        bin.install Dir['sloctl-*-0.11.0'].first()  => "sloctl"
+        bin.install Dir['sloctl-0.11.0-*'].first()  => "sloctl"
       end
     end
   end
@@ -33,7 +33,7 @@ class Sloctl < Formula
         sha256 "aa59bb0ebdb24b779e7b1f41f82a45b38b774a78afc31b039e22b46f8b03c7c6"
 
         def install
-          bin.install Dir['sloctl-*-0.11.0'].first()  => "sloctl"
+          bin.install Dir['sloctl-0.11.0-*'].first()  => "sloctl"
         end
       end
     end
@@ -43,7 +43,7 @@ class Sloctl < Formula
         sha256 "1506ed5a08487927f455ddbec7565a3b3d7aab2f0d169e99c1bb5378a12c1077"
 
         def install
-          bin.install Dir['sloctl-*-0.11.0'].first()  => "sloctl"
+          bin.install Dir['sloctl-0.11.0-*'].first()  => "sloctl"
         end
       end
     end
