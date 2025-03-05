@@ -5,23 +5,23 @@
 class Sloctl < Formula
   desc "Command-line client for Nobl9"
   homepage "https://docs.nobl9.com/sloctl-user-guide"
-  version "0.11.1"
+  version "0.11.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nobl9/sloctl/releases/download/v0.11.1/sloctl-0.11.1-darwin-amd64"
-      sha256 "2f7baacbd377ceaad05f2a984aeec5aaecee89985d2e41254e9597d291a7d57b"
+      url "https://github.com/nobl9/sloctl/releases/download/v0.11.2/sloctl-0.11.2-darwin-amd64"
+      sha256 "4dad5e37113fd97cffd98aaee409acb0d39afa912b817beac047ad02438124db"
 
       def install
-        bin.install Dir['sloctl-0.11.1-*'].first()  => "sloctl"
+        bin.install Dir['sloctl-0.11.2-*'].first()  => "sloctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nobl9/sloctl/releases/download/v0.11.1/sloctl-0.11.1-darwin-arm64"
-      sha256 "0fd05a650e2c47d072ed89a6f82a2fb888fe5247aedf0a566313a20885905c63"
+      url "https://github.com/nobl9/sloctl/releases/download/v0.11.2/sloctl-0.11.2-darwin-arm64"
+      sha256 "51c502707643852f90e4aa32be235aefdb474ee0b299eed818b30c5576a0a022"
 
       def install
-        bin.install Dir['sloctl-0.11.1-*'].first()  => "sloctl"
+        bin.install Dir['sloctl-0.11.2-*'].first()  => "sloctl"
       end
     end
   end
@@ -29,21 +29,21 @@ class Sloctl < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nobl9/sloctl/releases/download/v0.11.1/sloctl-0.11.1-linux-amd64"
-        sha256 "78ec1c55ff0120052e097a7d4fe39561449dfd9ab0c0a5101785f9dbb280400b"
+        url "https://github.com/nobl9/sloctl/releases/download/v0.11.2/sloctl-0.11.2-linux-amd64"
+        sha256 "ac11b7549ba3280f1392bcd908e38055a7e5d3513c73f2eb3ea5264b815b9f8a"
 
         def install
-          bin.install Dir['sloctl-0.11.1-*'].first()  => "sloctl"
+          bin.install Dir['sloctl-0.11.2-*'].first()  => "sloctl"
         end
       end
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nobl9/sloctl/releases/download/v0.11.1/sloctl-0.11.1-linux-arm64"
-        sha256 "1605b356e2dd411c47d286cf0f79d0dd2ad4a880cfe10d7bb2505182f70ddc13"
+        url "https://github.com/nobl9/sloctl/releases/download/v0.11.2/sloctl-0.11.2-linux-arm64"
+        sha256 "b2dfffddde746f7fdbb48f7e3edfcaef392efc892defd092cc7455f7fecb0be4"
 
         def install
-          bin.install Dir['sloctl-0.11.1-*'].first()  => "sloctl"
+          bin.install Dir['sloctl-0.11.2-*'].first()  => "sloctl"
         end
       end
     end
