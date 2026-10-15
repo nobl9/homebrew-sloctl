@@ -5,40 +5,40 @@
 class Sloctl < Formula
   desc "Command-line client for Nobl9"
   homepage "https://docs.nobl9.com/sloctl-user-guide"
-  version "0.30.0"
+  version "0.31.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nobl9/sloctl/releases/download/v0.30.0/sloctl-0.30.0-darwin-amd64"
-      sha256 "f8519c6c14893a91c5cff2943ef45ce831dec4a9eb7850825f2020e7abf57b4b"
+      url "https://github.com/nobl9/sloctl/releases/download/v0.31.0/sloctl-0.31.0-darwin-amd64"
+      sha256 "b0cc7ab6ea21b2340dbe9571f196f46e793dd1dd7b3bd1abe4e293f90408c163"
 
       define_method(:install) do
-        bin.install Dir['sloctl-0.30.0-*'].first()  => "sloctl"
+        bin.install Dir['sloctl-0.31.0-*'].first()  => "sloctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nobl9/sloctl/releases/download/v0.30.0/sloctl-0.30.0-darwin-arm64"
-      sha256 "84977e0d54666d48fcecc8e36d724683feb5463aaf858d6861a5bed51a41ecac"
+      url "https://github.com/nobl9/sloctl/releases/download/v0.31.0/sloctl-0.31.0-darwin-arm64"
+      sha256 "a04392361d71835be2488fcb0a15fca619ce8386b3be9f6dc9c191506053a3ea"
 
       define_method(:install) do
-        bin.install Dir['sloctl-0.30.0-*'].first()  => "sloctl"
+        bin.install Dir['sloctl-0.31.0-*'].first()  => "sloctl"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nobl9/sloctl/releases/download/v0.30.0/sloctl-0.30.0-linux-amd64"
-      sha256 "2a6642f96013cdf42ba9b0443e9898e2ab57ec2b50763a9d6072b0c33098f22d"
+      url "https://github.com/nobl9/sloctl/releases/download/v0.31.0/sloctl-0.31.0-linux-amd64"
+      sha256 "b5b50933ec86734a83d3f52fa7b679c8933674ee1835c08200436678da3a0bb2"
       define_method(:install) do
-        bin.install Dir['sloctl-0.30.0-*'].first()  => "sloctl"
+        bin.install Dir['sloctl-0.31.0-*'].first()  => "sloctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nobl9/sloctl/releases/download/v0.30.0/sloctl-0.30.0-linux-arm64"
-      sha256 "f3f8eec9f98ec785bf629f3f375c577e930001f939bd03a3e9e4abdc21c3dd74"
+      url "https://github.com/nobl9/sloctl/releases/download/v0.31.0/sloctl-0.31.0-linux-arm64"
+      sha256 "381f63b878d3d10e5e2e9b9c9f3ddfddfc149b21fe3b20138b57bd35d28b5ebd"
       define_method(:install) do
-        bin.install Dir['sloctl-0.30.0-*'].first()  => "sloctl"
+        bin.install Dir['sloctl-0.31.0-*'].first()  => "sloctl"
       end
     end
   end
